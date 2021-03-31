@@ -100,3 +100,4 @@ if __name__ == '__main__':
          [np.inf, np.inf, np.inf, np.inf, np.inf, np.inf, -3, np.inf, 1, 0]]
 
     print(johnson(d3, m3))
+    
