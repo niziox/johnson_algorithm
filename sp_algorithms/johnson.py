@@ -50,39 +50,39 @@ def johnson(G: Dict[int, List[int]], a: List[List[int]]) -> Optional[Dict[int, D
 
 if __name__ == '__main__':
 
-    # print('Graf nieskierowany')
-    # d1 = {1: [2, 4, 10], 2: [1, 3, 4, 9, 10], 3: [2, 4, 5, 9], 4: [1, 2, 3, 5], 5: [3, 4, 6, 7, 9], 6: [5, 7, 8],
-    #      7: [5, 6, 8, 9], 8: [6, 7, 9, 10], 9: [2, 3, 5, 7, 8, 10], 10: [1, 2, 8, 9]}
-    #
-    # m1 = [[0, 4, np.inf, 6, np.inf, np.inf, np.inf, np.inf, np.inf, 9],
-    #      [4, 0, 1, 5, np.inf, np.inf, np.inf, np.inf, 9, 11],
-    #      [np.inf, 1, 0, 2, 9, np.inf, np.inf, np.inf, 8, np.inf],
-    #      [6, 5, 2, 0, 10, np.inf, np.inf, np.inf, np.inf, np.inf],
-    #      [np.inf, np.inf, 9, 10, 0, 6, 5, np.inf, 7, np.inf],
-    #      [np.inf, np.inf, np.inf, np.inf, 6, 0, 1, 5, np.inf, np.inf],
-    #      [np.inf, np.inf, np.inf, np.inf, 5, 1, 0, 3, 8, np.inf],
-    #      [np.inf, np.inf, np.inf, np.inf, np.inf, 5, 3, 0, 9, 15],
-    #      [np.inf, 9, 8, np.inf, 7, np.inf, 8, 9, 0, 8],
-    #      [9, 11, np.inf, np.inf, np.inf, np.inf, np.inf, 15, 8, 0]]
-    #
-    # print(johnson(d1, m1))
+    print('Graf nieskierowany')
+    d1 = {1: [2, 4, 10], 2: [1, 3, 4, 9, 10], 3: [2, 4, 5, 9], 4: [1, 2, 3, 5], 5: [3, 4, 6, 7, 9], 6: [5, 7, 8],
+         7: [5, 6, 8, 9], 8: [6, 7, 9, 10], 9: [2, 3, 5, 7, 8, 10], 10: [1, 2, 8, 9]}
 
-    # print('\nGraf skierowany:')
-    # d2 = {1: [2], 2: [3, 4], 3: [1], 4: [3, 5, 6], 5: [2, 7, 10], 6: [3, 10],
-    #       7: [8, 9], 8: [10], 9: [6, 8], 10: [7, 9]}
-    #
-    # m2 = [[0, 4, np.inf, np.inf, np.inf, np.inf, np.inf, np.inf, np.inf, np.inf],
-    #      [np.inf, 0, -11, 9, np.inf, np.inf, np.inf, np.inf, np.inf, np.inf],
-    #      [8, np.inf, 0, np.inf, np.inf, np.inf, np.inf, np.inf, np.inf, np.inf],
-    #      [np.inf, np.inf, 7, 0, 2, 6, np.inf, np.inf, np.inf, np.inf],
-    #      [np.inf, 8, np.inf, np.inf, 0, np.inf, -7, np.inf, np.inf, 4],
-    #      [np.inf, np.inf, -1, np.inf, np.inf, 0, np.inf, np.inf, np.inf, 5],
-    #      [np.inf, np.inf, np.inf, np.inf, np.inf, np.inf, 0, 9, 13, np.inf],
-    #      [np.inf, np.inf, np.inf, np.inf, np.inf, np.inf, np.inf, 0, np.inf, 6],
-    #      [np.inf, np.inf, np.inf, np.inf, np.inf, 2, np.inf, 10, 0, np.inf],
-    #      [np.inf, np.inf, np.inf, np.inf, np.inf, np.inf, 3, np.inf, 1, 0]]
-    #
-    # print(johnson(d2, m2))
+    m1 = [[0, 4, np.inf, 6, np.inf, np.inf, np.inf, np.inf, np.inf, 9],
+         [4, 0, 1, 5, np.inf, np.inf, np.inf, np.inf, 9, 11],
+         [np.inf, 1, 0, 2, 9, np.inf, np.inf, np.inf, 8, np.inf],
+         [6, 5, 2, 0, 10, np.inf, np.inf, np.inf, np.inf, np.inf],
+         [np.inf, np.inf, 9, 10, 0, 6, 5, np.inf, 7, np.inf],
+         [np.inf, np.inf, np.inf, np.inf, 6, 0, 1, 5, np.inf, np.inf],
+         [np.inf, np.inf, np.inf, np.inf, 5, 1, 0, 3, 8, np.inf],
+         [np.inf, np.inf, np.inf, np.inf, np.inf, 5, 3, 0, 9, 15],
+         [np.inf, 9, 8, np.inf, 7, np.inf, 8, 9, 0, 8],
+         [9, 11, np.inf, np.inf, np.inf, np.inf, np.inf, 15, 8, 0]]
+
+    print(johnson(d1, m1))
+
+    print('\nGraf skierowany:')
+    d2 = {1: [2], 2: [3, 4], 3: [1], 4: [3, 5, 6], 5: [2, 7, 10], 6: [3, 10],
+          7: [8, 9], 8: [10], 9: [6, 8], 10: [7, 9]}
+
+    m2 = [[0, 4, np.inf, np.inf, np.inf, np.inf, np.inf, np.inf, np.inf, np.inf],
+         [np.inf, 0, -11, 9, np.inf, np.inf, np.inf, np.inf, np.inf, np.inf],
+         [8, np.inf, 0, np.inf, np.inf, np.inf, np.inf, np.inf, np.inf, np.inf],
+         [np.inf, np.inf, 7, 0, 2, 6, np.inf, np.inf, np.inf, np.inf],
+         [np.inf, 8, np.inf, np.inf, 0, np.inf, -7, np.inf, np.inf, 4],
+         [np.inf, np.inf, -1, np.inf, np.inf, 0, np.inf, np.inf, np.inf, 5],
+         [np.inf, np.inf, np.inf, np.inf, np.inf, np.inf, 0, 9, 13, np.inf],
+         [np.inf, np.inf, np.inf, np.inf, np.inf, np.inf, np.inf, 0, np.inf, 6],
+         [np.inf, np.inf, np.inf, np.inf, np.inf, 2, np.inf, 10, 0, np.inf],
+         [np.inf, np.inf, np.inf, np.inf, np.inf, np.inf, 3, np.inf, 1, 0]]
+
+    print(johnson(d2, m2))
 
     print('\nGraf skierowany z cyklami ujemnymi:')
     d3 = {1: [2], 2: [3, 4], 3: [1], 4: [3, 5, 6], 5: [2, 7, 10], 6: [3, 10],
